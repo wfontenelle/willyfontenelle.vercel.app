@@ -77,7 +77,7 @@ export default function Home() {
                 Product Designer
               </h3>
               <p className="text-md py-5 leading-6 text-gray-600 dark:text-gray-200 max-w-xl mx-auto md:text-md transition-color duration-700">
-                Estruturo produtos digitais com impacto em conversão, escala e operação
+                Desenvolvimento de negócios digitais que convertem, escalam e funcionam na prática.
               </p>
               <div className="text-4xl flex justify-center gap-4 py-3">
                 <a
