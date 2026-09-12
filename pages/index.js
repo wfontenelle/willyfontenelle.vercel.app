@@ -9,6 +9,7 @@ import {
   BsSunFill,
 } from "react-icons/bs";
 import { FiFigma } from "react-icons/fi";
+import { SiNotion } from "react-icons/si";
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -77,9 +78,24 @@ export default function Home() {
                 Product Designer
               </h3>
               <p className="text-md py-5 leading-6 text-gray-600 dark:text-gray-200 max-w-xl mx-auto md:text-md transition-color duration-700">
-                Desenvolvimento de negócios digitais que convertem, escalam e funcionam na prática.
+                Desenvolvimento de negócios digitais que convertem,<br />escalam e funcionam na prática.
               </p>
-              <div className="text-4xl flex justify-center gap-4 py-3">
+                            <div className="text-4xl flex justify-center gap-4 py-3">
+                <a
+                  href="https://willyfontenelle.notion.site/Willy-Fontenelle-1bc7670875b94183af99e05b22d550e0?source=copy_link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Notion"
+                >
+                  <span
+                    className={`cursor-pointer ${darkMode
+                        ? "text-white hover:text-gray-200 active:text-gray-400"
+                        : "text-gray-500 hover:text-gray-700 active:text-black"
+                      } transition-color duration-700`}
+                  >
+                    <SiNotion />
+                  </span>
+                </a>
                 <a
                   href="https://www.linkedin.com/in/willyfontenelle"
                   target="_blank"
