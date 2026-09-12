@@ -111,7 +111,7 @@ export default function Home() {
                   </span>
                 </a>
                 <a
-                  href="https://github.com/willyfontenelle"
+                  href="https://github.com/wfontenelle"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
