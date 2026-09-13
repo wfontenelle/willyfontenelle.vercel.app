@@ -37,8 +37,8 @@ export default function Home() {
       </Head>
       <main className="bg-white dark:bg-gray-900 md:px-20 lg:px-40 transition-color duration-700">
         <section className="grid max-w-screen-md mx-auto">
-          <section className="min-h-64">
-            <nav className="py-8 mb-2 flex justify-center">
+          <section className="min-h-48">
+            <nav className="pt-6 pb-2 mb-0 flex justify-center">
               <ul className="flex items-center">
                 <li>
                   <div
@@ -52,7 +52,7 @@ export default function Home() {
                     {darkMode ? <BsFillMoonStarsFill /> : <BsSunFill />}
                   </div>
                 </li>
-                <li>
+                {/* <li>
                   <a
                     className={`bg-blue-600 text-white py-3 px-4 border-none rounded-md ml-8 ${darkMode
                         ? "hover:bg-blue-700 active:bg-blue-800"
@@ -65,11 +65,11 @@ export default function Home() {
                   >
                     Resume
                   </a>
-                </li>
+                </li> */}
               </ul>
             </nav>
 
-            <div className="text-center p-10 py-10">
+            <div className="text-center px-6 pt-4 pb-8 sm:px-10 sm:pt-6 sm:pb-10">
               <h2 className="text-4xl py-2 text-blue-600 font-bold dark:text-blue-500 md:text-6xl transition-color duration-700">
                 Willy Fontenelle
               </h2>
