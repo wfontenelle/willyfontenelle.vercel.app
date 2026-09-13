@@ -14,9 +14,9 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import avatar from "../public/Avatar.png";
-import suitcase from "../public/suitcase.png";
-import wine from "../public/wine.jpg";
-import shopfood from "../public/shopfood.png";
+import wineCover from "../public/wine_cover.jpg";
+import hurbCover from "../public/hurb_cover.jpg";
+import inaiahCover from "../public/inaiah.png";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -184,122 +184,191 @@ export default function Home() {
           </section>
 
           <section className="pb-16">
-            <div>
-              <h3 className="text-2xl font-medium px-5 pb-2 text-gray-600 dark:text-white">
-                Portfolio
+            <div className="flex justify-between items-center px-5 pb-4">
+              <h3 className="text-2xl font-medium text-gray-600 dark:text-white">
+                Cases
               </h3>
+              <a
+                href="https://willyfontenelle.notion.site/Willy-Fontenelle-1bc7670875b94183af99e05b22d550e0?source=copy_link"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs sm:text-sm text-blue-600 dark:text-blue-400 hover:underline"
+              >
+                Ver todos no Notion →
+              </a>
             </div>
 
-            <div className="block gap-4">
-
+            <div className="block space-y-6">
+              {/* Case 1: Wine */}
               <div className="text-left pt-4 pb-4 px-5 dark:text-white md:space-x-4">
                 <div className="md:flex md:flex-1 md:gap">
-                  <div className="rounded-md overflow-hidden relative h-48 w-full object-cover md:w-1/2 md:h-auto">
-                    <Image
-                      src={suitcase}
-                      alt="Suitcase Design System"
-                      fill
-                      sizes="100vw"
-                      style={{
-                        objectFit: "cover",
-                        objectPosition: "center"
-                      }} />
-                  </div>
-                  <div className="pt-4 md:pt-0 md:w-1/2 md:pl-4">
-                    <h3 className="text-lg font-medium pb-1 text-gray-800 dark:text-white">
-                      Suitcase Design System
-                    </h3>
-                    <p className="text-md text-gray-600 dark:text-gray-200">
-                      Creating the first version of a design system from theory to practice
-                    </p>
-                    <p className="text-gray-400 py-1 text-sm dark:text-gray-400">
-                      #designsystem #productmanagement #userinterface
-                      #userexperience #figma #designtokens #frontend-development
-                      #react
-                    </p>
+                  <div className="rounded-md overflow-hidden relative h-52 w-full object-cover md:w-1/2 md:h-auto">
                     <a
-                      href="https://willyfontenelle.medium.com/suitcase-design-system-from-theory-to-practice-ba41c56c87ba"
+                      href="https://willyfontenelle.notion.site/wine"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-blue-600 text-sm hover:underline"
+                      className="block relative h-52 md:h-full w-full"
                     >
-                      Access project on Medium (English)
+                      <Image
+                        src={wineCover}
+                        alt="Wine"
+                        fill
+                        sizes="100vw"
+                        style={{
+                          objectFit: "cover",
+                          objectPosition: "center",
+                        }}
+                      />
+                    </a>
+                  </div>
+                  <div className="pt-4 md:pt-0 md:w-1/2 md:pl-4 space-y-1">
+                    <h3 className="text-xl font-bold text-gray-800 dark:text-white">
+                      <a
+                        href="https://willyfontenelle.notion.site/wine"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:underline text-gray-800 dark:text-white"
+                      >
+                        Wine
+                      </a>
+                    </h3>
+                    <p className="text-xs text-gray-400 dark:text-gray-400 italic pb-1">
+                      Jan/2019 – Jun/2021 · Product Designer
+                    </p>
+                    <p className="text-md text-gray-600 dark:text-gray-200">
+                      Como redesenhei o aplicativo de vendas por relacionamento da Wine: um ecossistema completo responsável pelo crescimento de 64% em faturamento, mais que o dobro em vendas e resultando na aquisição estratégica do canal.
+                    </p>
+                    <p className="text-gray-400 py-1 text-xs dark:text-gray-400">
+                      #product design #ux #ui #design system #research #app #dashboard #e-commerce #visual design #user flow
+                    </p>
+                    <p className="text-gray-400 text-xs dark:text-gray-400 pb-2">
+                      <span className="font-medium">tools:</span> figma, adobe suite
+                    </p>
+                    <a
+                      href="https://willyfontenelle.notion.site/wine"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-600 dark:text-blue-400 text-sm font-semibold hover:underline inline-block"
+                    >
+                      Acessar case no Notion →
                     </a>
                   </div>
                 </div>
               </div>
 
+              {/* Case 2: Hotel Urbano */}
               <div className="text-left pt-4 pb-4 px-5 dark:text-white md:space-x-4">
                 <div className="md:flex md:flex-1 md:gap">
-                  <div className="rounded-md overflow-hidden relative h-48 w-full object-cover md:w-1/2 md:h-auto">
-                    <Image
-                      src={wine}
-                      alt="Wine Eventos (We Wine)"
-                      fill
-                      sizes="100vw"
-                      style={{
-                        objectFit: "cover",
-                        objectPosition: "center"
-                      }} />
-                  </div>
-                  <div className="pt-4 md:pt-0 md:w-1/2 md:pl-4">
-                    <h3 className="text-lg font-medium pb-1 text-gray-800 dark:text-white">
-                      Wine Eventos (We Wine)
-                    </h3>
-                    <p className="text-md text-gray-600 dark:text-gray-200">
-                      Redesigning the experience of recommending drinks for events and monitoring its transition and results
-                    </p>
-                    <p className="text-gray-400 py-1 text-sm dark:text-gray-400">
-                      #userinterface #userexperience #designthinking #research #designsystem #figma
-                      #react
-                    </p>
+                  <div className="rounded-md overflow-hidden relative h-52 w-full object-cover md:w-1/2 md:h-auto">
                     <a
-                      href="https://willyfontenelle.medium.com/wine-eventos-ux-case-bd47eea18fec"
+                      href="https://willyfontenelle.notion.site/hurb"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-blue-600 text-sm hover:underline"
+                      className="block relative h-52 md:h-full w-full"
                     >
-                      Access project on Medium (Portuguese)
+                      <Image
+                        src={hurbCover}
+                        alt="Hotel Urbano"
+                        fill
+                        sizes="100vw"
+                        style={{
+                          objectFit: "cover",
+                          objectPosition: "center",
+                        }}
+                      />
+                    </a>
+                  </div>
+                  <div className="pt-4 md:pt-0 md:w-1/2 md:pl-4 space-y-1">
+                    <h3 className="text-xl font-bold text-gray-800 dark:text-white">
+                      <a
+                        href="https://willyfontenelle.notion.site/hurb"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:underline text-gray-800 dark:text-white"
+                      >
+                        Hotel Urbano
+                      </a>
+                    </h3>
+                    <p className="text-xs text-gray-400 dark:text-gray-400 italic pb-1">
+                      Jan/2022 – Jun/2023 · Senior Design System Analyst
+                    </p>
+                    <p className="text-md text-gray-600 dark:text-gray-200">
+                      Como criei o primeiro design system de uma empresa de turismo com 10 squads e destravei R$288k em capacidade de entrega com 82% de adoção.
+                    </p>
+                    <p className="text-gray-400 py-1 text-xs dark:text-gray-400">
+                      #design system #product design #ui #ux #frontend #design ops #branding
+                    </p>
+                    <p className="text-gray-400 text-xs dark:text-gray-400 pb-2">
+                      <span className="font-medium">tools:</span> figma, storybook, adobe suite, notion, google analytics
+                    </p>
+                    <a
+                      href="https://willyfontenelle.notion.site/hurb"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-600 dark:text-blue-400 text-sm font-semibold hover:underline inline-block"
+                    >
+                      Acessar case no Notion →
                     </a>
                   </div>
                 </div>
               </div>
 
+              {/* Case 3: Hanna Inaiáh */}
               <div className="text-left pt-4 pb-4 px-5 dark:text-white md:space-x-4">
                 <div className="md:flex md:flex-1 md:gap">
-                  <div className="rounded-md overflow-hidden relative h-48 w-full object-cover md:w-1/2 md:h-auto">
-                    <Image
-                      src={shopfood}
-                      alt="Parmê & Shopfood"
-                      fill
-                      sizes="100vw"
-                      style={{
-                        objectFit: "cover",
-                        objectPosition: "center"
-                      }} />
-                  </div>
-                  <div className="pt-4 md:pt-0 md:w-1/2 md:pl-4">
-                    <h3 className="text-lg font-medium pb-1 text-gray-800 dark:text-white">
-                      Parmê & Shopfood
-                    </h3>
-                    <p className="text-md text-gray-600 dark:text-gray-200">
-                      Redesigning white-label e-commerce platform for restaurants and food deliveries
-                    </p>
-                    <p className="text-gray-400 py-1 text-sm dark:text-gray-400">
-                      #userinterface #userexperience #designsystem #figma
-                    </p>
+                  <div className="rounded-md overflow-hidden relative h-52 w-full object-cover md:w-1/2 md:h-auto">
                     <a
-                      href="https://www.behance.net/gallery/98124739/Shopfood"
+                      href="https://willyfontenelle.notion.site/hannainaiah"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-blue-600 text-sm hover:underline"
+                      className="block relative h-52 md:h-full w-full"
                     >
-                      Access project on Behance
+                      <Image
+                        src={inaiahCover}
+                        alt="Hanna Inaiáh"
+                        fill
+                        sizes="100vw"
+                        style={{
+                          objectFit: "cover",
+                          objectPosition: "center",
+                        }}
+                      />
+                    </a>
+                  </div>
+                  <div className="pt-4 md:pt-0 md:w-1/2 md:pl-4 space-y-1">
+                    <h3 className="text-xl font-bold text-gray-800 dark:text-white">
+                      <a
+                        href="https://willyfontenelle.notion.site/hannainaiah"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:underline text-gray-800 dark:text-white"
+                      >
+                        Hanna Inaiáh
+                      </a>
+                    </h3>
+                    <p className="text-xs text-gray-400 dark:text-gray-400 italic pb-1">
+                      2021 – 2025 · Product, Growth & Design Ops
+                    </p>
+                    <p className="text-md text-gray-600 dark:text-gray-200">
+                      Como transformei a audiência orgânica da artista num estúdio que fatura R$220k por ano, unindo a qualidade do trabalho dela com minha bagagem de produto, growth e tecnologia.
+                    </p>
+                    <p className="text-gray-400 py-1 text-xs dark:text-gray-400">
+                      #branding #design ops #design growth #webdesign #no code #low code #ai #seo #automation #crm #e-commerce #landing page
+                    </p>
+                    <p className="text-gray-400 text-xs dark:text-gray-400 pb-2">
+                      <span className="font-medium">tools:</span> shopify, wix, hotjar, google analytics, meta ads, google ads, manychat, figma, notion, adobe suite
+                    </p>
+                    <a
+                      href="https://willyfontenelle.notion.site/hannainaiah"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-600 dark:text-blue-400 text-sm font-semibold hover:underline inline-block"
+                    >
+                      Acessar case no Notion →
                     </a>
                   </div>
                 </div>
               </div>
-
             </div>
           </section>
         </section>
