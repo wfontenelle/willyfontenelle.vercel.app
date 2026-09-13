@@ -13,7 +13,7 @@ import { SiNotion } from "react-icons/si";
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import avatar from "../public/avatar.jpg";
+import avatar from "../public/Avatar.png";
 import suitcase from "../public/suitcase.png";
 import wine from "../public/wine.jpg";
 import shopfood from "../public/shopfood.png";
