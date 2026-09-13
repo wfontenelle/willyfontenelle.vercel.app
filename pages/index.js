@@ -77,8 +77,8 @@ export default function Home() {
               <h3 className="text-2xl py-2 text-gray-500 dark:text-gray-400 md:text-2xl transition-color duration-700">
                 Product Designer
               </h3>
-              <p className="text-md py-5 leading-6 text-gray-600 dark:text-gray-200 max-w-xl mx-auto md:text-md transition-color duration-700">
-                Desenvolvimento de negócios digitais que convertem,<br />escalam e funcionam na prática.
+              <p className="text-md py-5 leading-6 text-gray-600 dark:text-gray-200 max-w-sm md:max-w-md mx-auto md:text-md transition-color duration-700">
+                Desenvolvimento de negócios digitais que convertem, escalam e funcionam na prática.
               </p>
                             <div className="text-4xl flex justify-center gap-4 py-3">
                 <a
