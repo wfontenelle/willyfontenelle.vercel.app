@@ -371,6 +371,10 @@ export default function Home() {
               </div>
             </div>
           </section>
+
+          <footer className="border-t border-gray-200 dark:border-gray-800 py-8 text-center text-xs text-gray-500 dark:text-gray-400">
+            <p>© {new Date().getFullYear()} Willy Fontenelle • Product Designer</p>
+          </footer>
         </section>
       </main>
     </div>
