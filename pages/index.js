@@ -199,120 +199,6 @@ export default function Home() {
             </div>
 
             <div className="block space-y-6">
-              {/* Case 1: Wine */}
-              <div className="text-left pt-4 pb-4 px-5 dark:text-white md:space-x-4">
-                <div className="md:flex md:flex-1 md:gap">
-                  <div className="rounded-md overflow-hidden relative h-52 w-full object-cover md:w-1/2 md:h-auto">
-                    <a
-                      href="https://willyfontenelle.notion.site/wine"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block relative h-52 md:h-full w-full"
-                    >
-                      <Image
-                        src={wineCover}
-                        alt="Wine"
-                        fill
-                        sizes="100vw"
-                        style={{
-                          objectFit: "cover",
-                          objectPosition: "center",
-                        }}
-                      />
-                    </a>
-                  </div>
-                  <div className="pt-4 md:pt-0 md:w-1/2 md:pl-4 space-y-1">
-                    <h3 className="text-xl font-bold text-gray-800 dark:text-white">
-                      <a
-                        href="https://willyfontenelle.notion.site/wine"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="hover:underline text-gray-800 dark:text-white"
-                      >
-                        Wine
-                      </a>
-                    </h3>
-                    <p className="text-xs text-gray-400 dark:text-gray-400 italic pb-1">
-                      Jan/2019 – Jun/2021 · Product Designer
-                    </p>
-                    <p className="text-md text-gray-600 dark:text-gray-200">
-                      Como redesenhei o aplicativo de vendas por relacionamento da Wine: um ecossistema completo responsável pelo crescimento de 64% em faturamento, mais que o dobro em vendas e resultando na aquisição estratégica do canal.
-                    </p>
-                    <p className="text-gray-400 py-1 text-xs dark:text-gray-400">
-                      #product design #ux #ui #design system #research #app #dashboard #e-commerce #visual design #user flow
-                    </p>
-                    <p className="text-gray-400 text-xs dark:text-gray-400 pb-2">
-                      <span className="font-medium">tools:</span> figma, adobe suite
-                    </p>
-                    <a
-                      href="https://willyfontenelle.notion.site/wine"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-blue-600 dark:text-blue-400 text-sm font-semibold hover:underline inline-block"
-                    >
-                      Acessar case no Notion →
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              {/* Case 2: Hotel Urbano */}
-              <div className="text-left pt-4 pb-4 px-5 dark:text-white md:space-x-4">
-                <div className="md:flex md:flex-1 md:gap">
-                  <div className="rounded-md overflow-hidden relative h-52 w-full object-cover md:w-1/2 md:h-auto">
-                    <a
-                      href="https://willyfontenelle.notion.site/hurb"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block relative h-52 md:h-full w-full"
-                    >
-                      <Image
-                        src={hurbCover}
-                        alt="Hotel Urbano"
-                        fill
-                        sizes="100vw"
-                        style={{
-                          objectFit: "cover",
-                          objectPosition: "center",
-                        }}
-                      />
-                    </a>
-                  </div>
-                  <div className="pt-4 md:pt-0 md:w-1/2 md:pl-4 space-y-1">
-                    <h3 className="text-xl font-bold text-gray-800 dark:text-white">
-                      <a
-                        href="https://willyfontenelle.notion.site/hurb"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="hover:underline text-gray-800 dark:text-white"
-                      >
-                        Hotel Urbano
-                      </a>
-                    </h3>
-                    <p className="text-xs text-gray-400 dark:text-gray-400 italic pb-1">
-                      Jan/2022 – Jun/2023 · Senior Design System Analyst
-                    </p>
-                    <p className="text-md text-gray-600 dark:text-gray-200">
-                      Como criei o primeiro design system de uma empresa de turismo com 10 squads e destravei R$288k em capacidade de entrega com 82% de adoção.
-                    </p>
-                    <p className="text-gray-400 py-1 text-xs dark:text-gray-400">
-                      #design system #product design #ui #ux #frontend #design ops #branding
-                    </p>
-                    <p className="text-gray-400 text-xs dark:text-gray-400 pb-2">
-                      <span className="font-medium">tools:</span> figma, storybook, adobe suite, notion, google analytics
-                    </p>
-                    <a
-                      href="https://willyfontenelle.notion.site/hurb"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-blue-600 dark:text-blue-400 text-sm font-semibold hover:underline inline-block"
-                    >
-                      Acessar case no Notion →
-                    </a>
-                  </div>
-                </div>
-              </div>
-
               {/* Case 3: Hanna Inaiáh */}
               <div className="text-left pt-4 pb-4 px-5 dark:text-white md:space-x-4">
                 <div className="md:flex md:flex-1 md:gap">
@@ -372,7 +258,121 @@ export default function Home() {
             </div>
           </section>
 
-          <footer className="border-t border-gray-200 dark:border-gray-800 py-8 text-center text-xs text-gray-500 dark:text-gray-400">
+          {/* Case 2: Hotel Urbano */}
+              <div className="text-left pt-4 pb-4 px-5 dark:text-white md:space-x-4">
+                <div className="md:flex md:flex-1 md:gap">
+                  <div className="rounded-md overflow-hidden relative h-52 w-full object-cover md:w-1/2 md:h-auto">
+                    <a
+                      href="https://willyfontenelle.notion.site/hurb"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block relative h-52 md:h-full w-full"
+                    >
+                      <Image
+                        src={hurbCover}
+                        alt="Hotel Urbano"
+                        fill
+                        sizes="100vw"
+                        style={{
+                          objectFit: "cover",
+                          objectPosition: "center",
+                        }}
+                      />
+                    </a>
+                  </div>
+                  <div className="pt-4 md:pt-0 md:w-1/2 md:pl-4 space-y-1">
+                    <h3 className="text-xl font-bold text-gray-800 dark:text-white">
+                      <a
+                        href="https://willyfontenelle.notion.site/hurb"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:underline text-gray-800 dark:text-white"
+                      >
+                        Hotel Urbano
+                      </a>
+                    </h3>
+                    <p className="text-xs text-gray-400 dark:text-gray-400 italic pb-1">
+                      Jan/2022 – Jun/2023 · Senior Design System Analyst
+                    </p>
+                    <p className="text-md text-gray-600 dark:text-gray-200">
+                      Como criei o primeiro design system de uma empresa de turismo com 10 squads e destravei R$288k em capacidade de entrega com 82% de adoção.
+                    </p>
+                    <p className="text-gray-400 py-1 text-xs dark:text-gray-400">
+                      #design system #product design #ui #ux #frontend #design ops #branding
+                    </p>
+                    <p className="text-gray-400 text-xs dark:text-gray-400 pb-2">
+                      <span className="font-medium">tools:</span> figma, storybook, adobe suite, notion, google analytics
+                    </p>
+                    <a
+                      href="https://willyfontenelle.notion.site/hurb"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-600 dark:text-blue-400 text-sm font-semibold hover:underline inline-block"
+                    >
+                      Acessar case no Notion →
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* Case 1: Wine */}
+              <div className="text-left pt-4 pb-4 px-5 dark:text-white md:space-x-4">
+                <div className="md:flex md:flex-1 md:gap">
+                  <div className="rounded-md overflow-hidden relative h-52 w-full object-cover md:w-1/2 md:h-auto">
+                    <a
+                      href="https://willyfontenelle.notion.site/wine"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block relative h-52 md:h-full w-full"
+                    >
+                      <Image
+                        src={wineCover}
+                        alt="Wine"
+                        fill
+                        sizes="100vw"
+                        style={{
+                          objectFit: "cover",
+                          objectPosition: "center",
+                        }}
+                      />
+                    </a>
+                  </div>
+                  <div className="pt-4 md:pt-0 md:w-1/2 md:pl-4 space-y-1">
+                    <h3 className="text-xl font-bold text-gray-800 dark:text-white">
+                      <a
+                        href="https://willyfontenelle.notion.site/wine"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:underline text-gray-800 dark:text-white"
+                      >
+                        Wine
+                      </a>
+                    </h3>
+                    <p className="text-xs text-gray-400 dark:text-gray-400 italic pb-1">
+                      Jan/2019 – Jun/2021 · Product Designer
+                    </p>
+                    <p className="text-md text-gray-600 dark:text-gray-200">
+                      Como redesenhei o aplicativo de vendas por relacionamento da Wine: um ecossistema completo responsável pelo crescimento de 64% em faturamento, mais que o dobro em vendas e resultando na aquisição estratégica do canal.
+                    </p>
+                    <p className="text-gray-400 py-1 text-xs dark:text-gray-400">
+                      #product design #ux #ui #design system #research #app #dashboard #e-commerce #visual design #user flow
+                    </p>
+                    <p className="text-gray-400 text-xs dark:text-gray-400 pb-2">
+                      <span className="font-medium">tools:</span> figma, adobe suite
+                    </p>
+                    <a
+                      href="https://willyfontenelle.notion.site/wine"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-600 dark:text-blue-400 text-sm font-semibold hover:underline inline-block"
+                    >
+                      Acessar case no Notion →
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <footer className="border-t border-gray-200 dark:border-gray-800 py-8 text-center text-xs text-gray-500 dark:text-gray-400">
             <p>© {new Date().getFullYear()} Willy Fontenelle • Product Designer</p>
           </footer>
         </section>
