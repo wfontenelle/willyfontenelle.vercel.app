@@ -255,10 +255,8 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </div>
-          </section>
 
-          {/* Case 2: Hotel Urbano */}
+              {/* Case 2: Hotel Urbano */}
               <div className="text-left pt-4 pb-4 px-5 dark:text-white md:space-x-4">
                 <div className="md:flex md:flex-1 md:gap">
                   <div className="rounded-md overflow-hidden relative h-52 w-full object-cover md:w-1/2 md:h-auto">
@@ -371,8 +369,10 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+            </div>
+          </section>
 
-              <footer className="border-t border-gray-200 dark:border-gray-800 py-8 text-center text-xs text-gray-500 dark:text-gray-400">
+          <footer className="border-t border-gray-200 dark:border-gray-800 py-8 text-center text-xs text-gray-500 dark:text-gray-400">
             <p>© {new Date().getFullYear()} Willy Fontenelle • Product Designer</p>
           </footer>
         </section>
